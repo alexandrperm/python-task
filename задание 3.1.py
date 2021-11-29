@@ -1,4 +1,4 @@
-# сентябрь
+
 # имя, фамилия
 # возраст
 # количество  музыкальных посещений
@@ -15,6 +15,7 @@ for people in peoples_list:
    if(people[3]>max_visit):
         max_visit=people [3]
 print('максимальное количество часов посещений',max_visit)
+
 # максимальное посещения тантев
 max_dance=0
 for people in peoples_list:
