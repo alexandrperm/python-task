@@ -19,3 +19,14 @@ def find_max_age (z):
 
 x = find_max_age(peoples_dict2)
 print("Максимальный возраст",x)
+def find_max_vizit (q):
+     max_vizit = 0
+     for peoples_index in q:
+         print(peoples_index)
+         print(q.get(peoples_index))
+         print(q.get(peoples_index).get("количество часов прибываня в центре"))
+         if (q.get(peoples_index).get("количество часов прибываня в центре") > max_vizit):
+             max_vizit = q.get(peoples_index).get("количество часов прибываня в центре")
+     return max_vizit
+x = find_max_vizit(peoples_dict2)
+print("количество часов прибываня в центре",x)

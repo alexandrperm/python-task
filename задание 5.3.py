@@ -9,6 +9,7 @@ def compare(S1,S2):
     print(S2)
     ngrams = [
         S1[i:i+3] for i in range(len(S1))
+
     ]
     count = 0
     for ngram in ngrams:

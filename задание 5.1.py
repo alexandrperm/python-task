@@ -28,19 +28,22 @@ def find_max_dance(a):
 
 
 #  поиск минимального посещения танцев
-min_dance = peoples_list[0][4]
-for people in peoples_list:
-    if (people[4] < min_dance):
-        min_dance = people[4]
-print('минимальное посещения танцев', min_dance)
+def find_min_dance(a):
+     min_dance = peoples_list[0][4]
+     for people in a:
+         if (people[4] < min_dance):
+               min_dance = people[4]
+     return min_dance
+
+
 
 # минимальный возраст
-min_age = 100
-for people in peoples_list:
-    if (people[1] < min_age):
-        min_age = people[1]
-print('минимальный возраст', min_age)
-
+def find_min_age(z):
+    min_age = 100
+    for people in z:
+        if (people[1] < min_age):
+            min_age = people[1]
+    return min_age
 
 x = find_max_visit(peoples_list)
 print("максимальное количества часов посещений",x)
@@ -48,3 +51,8 @@ print("максимальное количества часов посещени
 x = find_max_dance(peoples_list)
 print('максимальное количество часов посещений танцев', x)
 
+x = find_min_dance(peoples_list)
+print('минимальное посещения танцев', x)
+
+x = find_min_age(peoples_list)
+print('минимальный возраст',x )
